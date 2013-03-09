@@ -1,16 +1,39 @@
-title : Blog Title
-tagline: Blog Tagline
+title : 明小舟
+tagline: 这家伙很懒什么都没留下
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Allan Ming
+  email : tmdie6@gmail.com
+  github : xuanyi
+  twitter : mingxiaozhou
   feedburner : feedname
 
-navigation :
-  - archive.html
-  - tags.html
-  - categories.html
-  - pages.html
-  - about.md
-  
+#navigation :
+#  - archive.html
+#  - tags.html
+#  - categories.html
+#  - pages.html
+#  - about.md
+# 自己重新實現的導航
+nav :
+  - title: home
+    url: /
+    describe: 主頁
+  - title: archive
+    url: /archive
+    describe: 文章歸檔
+  - title: categories
+    url: /categories
+    describe: 分类
+  - title: feed
+    url: /rss.xml
+    describe: 訂閱
+  - title: about
+    url: /about
+    describe: 關於我
+
+#links:
+#  - title: MAGICALBOY
+#    url: http://magicalboy.com/
+#  - title: 驴子博客
+#    url: http://www.cnlvzi.com/
+
