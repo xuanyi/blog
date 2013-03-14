@@ -2,7 +2,7 @@
 title: ruhoh blog安装配置
 date: '2013-03-03'
 description:
-categories:
+categories: '环境配置'
 ---
 
 ### 安装Ruby
