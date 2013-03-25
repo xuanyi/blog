@@ -28,33 +28,23 @@ haslayout不是一个CSS属性，你不能这样的来设置它 haslayout:true;�
 
 #### 哪些元素本身就有haslayout属性
 
-<pre>
-	<code>
-		<html>, <body>
-		<table>, <tr>, <th>, <td>
-		<iframe>, <embed> (non-standard element), <object>, <applet>
-		<img>
-		<hr>
-		<input>, <button>, <select>, <textarea>, <fieldset>, <legend>
-		<marquee> (don’t ever use this one, non-standard and annoying)
-	</code>
-</pre>
+    <html>, <body>
+	<table>, <tr>, <th>, <td>
+	<iframe>, <embed> (non-standard element), <object>, <applet>
+	<img>
+	<hr>
+	<input>, <button>, <select>, <textarea>, <fieldset>, <legend>
+	<marquee> (don’t ever use this one, non-standard and annoying)
 
 这个列表时不完善的。很多元素在微软的官方网站上没有提到，但是有一个方法很容易的测试到一个元素是否有layout，例如下代码：
 
-<pre>
-	<code>
-		<div id="menu"> … </div>
-	</code>
-</pre>
+
+	<div id="menu"> … </div>
 
 为了判断这个div的haslayout属性值，我们可以在浏览器地址栏中输入如下代码：
 
-<pre>
-	<code>
-		javascript:alert(menu.currentStyle.hasLayout);
-	</code>
-</pre>
+
+	javascript:alert(menu.currentStyle.hasLayout);
 
 运行了这个代码之后就会反映出这个div的haslayout的属性值
 
@@ -64,31 +54,24 @@ haslayout不是一个CSS属性，你不能这样的来设置它 haslayout:true;�
 
 以下属性和值将给定一个元素布局
 
-<pre>
-	<code>
-		position: absolute
-		float: left or right
-		display: inline-block
-		width: any value other than auto
-		height: any value other than auto
-		zoom: any value other than normal (see description below)
-		writing-mode: tb-rl (see description below)
-	</code>
-</pre>
+
+	position: absolute
+	float: left or right
+	display: inline-block
+	width: any value other than auto
+	height: any value other than auto
+	zoom: any value other than normal (see description below)
+	writing-mode: tb-rl (see description below)
 
 在ie7中, 也有一些属性 give “layout”:
 
-<pre>
-	<code>
-		overflow: hidden or scroll or auto
-		overflow-x: hidden or scroll or auto
-		overflow-y: hidden or scroll or auto
-		min-width: any value other than auto
-		max-width: any value other than auto
-		min-height: any value other than auto
-		max-height: any value other than auto
-	</code>
-</pre>
+	overflow: hidden or scroll or auto
+	overflow-x: hidden or scroll or auto
+	overflow-y: hidden or scroll or auto
+	min-width: any value other than auto
+	max-width: any value other than auto
+	min-height: any value other than auto
+	max-height: any value other than auto
 
 在ie8的标准模式中，微软已经废弃了haslayout属性了，但是在ie7的兼容模式中，仍然存在着这个属性。
 
@@ -104,12 +87,8 @@ write-mode 就是字体排版布局的方式。
 
 它相当于
 
-<pre>
-	<code>
-		div { display: inline-block; } 
-		div { display: block; }
-	</code>
-</pre>
+	div { display: inline-block; } 
+	div { display: block; }
 
 设置contenteditable也给一个元素设置成了haslayout：true。例如：<p contenteditable=”true”>so lame</p>
 
