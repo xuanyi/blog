@@ -28,17 +28,15 @@ haslayout不是一个CSS属性，你不能这样的来设置它 haslayout:true;�
 
 #### 哪些元素本身就有haslayout属性
 
-<pre>
-	<code>
-		`<html>`, `<body>`
-		`<table>`, `<tr>`, `<th>`, `<td>`
-		`<iframe>`, `<embed>` (non-standard element), `<object>`, `<applet>`
-		`<img>`
-		`<hr>`
-		`<input>`, `<button>`, `<select>`, `<textarea>`, `<fieldset>`, `<legend>`
-		`<marquee>` (don’t ever use this one, non-standard and annoying)
-	</code>
-</pre>
+
+&lt;html&gt;, &lt;body>
+&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;
+&lt;iframe&gt;, &lt;embed&gt; (non-standard element), &lt;object&gt;, &lt;applet&gt;
+&lt;img&gt;
+&lt;hr&gt;
+&lt;input&gt;, &lt;button&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;fieldset&gt;, &lt;legend&gt;
+&lt;marquee&gt; (don’t ever use this one, non-standard and annoying)
+
 
 这个列表时不完善的。很多元素在微软的官方网站上没有提到，但是有一个方法很容易的测试到一个元素是否有layout，例如下代码：
 
