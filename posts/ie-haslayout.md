@@ -90,7 +90,9 @@ write-mode 就是字体排版布局的方式。
 	div { display: inline-block; } 
 	div { display: block; }
 
-设置contenteditable也给一个元素设置成了haslayout：true。例如：<p contenteditable=”true”>so lame</p>
+设置contenteditable也给一个元素设置成了haslayout：true。例如：
+
+	<p contenteditable=”true”>so lame</p>
 
 你可能从来不用它来设置haslayout：true，写在这里只是为了一个信息的目的。不仅contenteditable是微软的一个属性，而且他还可以允许用户
 
