@@ -1,6 +1,6 @@
 ---
 title: js判断ie最短的写法(ie6\7\8\9)
-date: '2013-03-28'
+date: '2013-03-27'
 description:
 categories: 'Javascript'
 ---
